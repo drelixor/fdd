@@ -113,6 +113,6 @@ function Start-WebcamRecorder
   }
 }
 Start-WebcamRecorder -RecordTime 1
-& $env:appdata/ffmpeg.exe -y -i "$env:appdata/out.avi" -vf "drawtext=text='You got hacked!':x=10:y=H-th-10:fontsize=100:fontcolor=white:shadowcolor=black:shadowx=5:shadowy=5" "$env:appdata/out2.avi"
+& $env:appdata/ffmpeg.exe -y -i "$env:appdata/out.avi" -vf "drawtext=text='You got hacked!':x=20:y=H-th-50:fontsize=100:fontcolor=white:shadowcolor=black:shadowx=5:shadowy=5" "$env:appdata/out2.avi"
 start $env:appdata/out2.avi
 exit
