@@ -1,3 +1,2 @@
-echo Hello World! > $env:userprofile/hello.txt
-pause
+echo Hello World! > $env:userprofile/hellofdd.txt
 exit
