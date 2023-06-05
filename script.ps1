@@ -114,6 +114,6 @@ function Start-WebcamRecorder
 }
 $timestamp = Get-Date -Format 'yyyyMMddHHmmss'
 Start-WebcamRecorder -RecordTime 1
-& $env:appdata/ffmpeg.exe -y -i "$env:appdata/out.avi" -pix_fmt yuv420p -vf "drawtext=text='You got hacked!':x=20:y=H-th-50:fontsize=100:fontcolor=white:shadowcolor=black:shadowx=5:shadowy=5" "$env:appdata/fdd_$timestamp.mp4"
+& $env:appdata/ffmpeg.exe -y -i "$env:appdata/out.avi" -pix_fmt yuv420p -vf "drawtext=text='You got hacked!':x=25:y=H-th-50:fontsize=100:fontcolor=white:shadowcolor=black:shadowx=5:shadowy=5" "$env:appdata/fdd_$timestamp.mp4"
 start $env:appdata/fdd_$timestamp.mp4
 exit
